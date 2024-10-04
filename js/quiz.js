@@ -46,29 +46,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 ${results.map(result => `- Question: ${result.question}, Correct: ${result.isCorrect}`).join('\n')}
             `;
 
-            fetch('https://gmail.googleapis.com/$discovery/rest?version=v1', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    to: 'your-email@gmail.com',
-                    subject: 'Quiz Results',
-                    body: emailBody,
-                }),
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    alert('Your results have been sent to your email.');
-                } else {
-                    alert('There was an error sending your results. Please try again.');
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert('There was an error sending your results. Please try again.');
-            });
+            // Create a mailto link
+            const mailtoLink = `mailto:your-email@gmail.com?subject=Quiz Results&body=${encodeURIComponent(emailBody)}`;
+
+            // Open the user's email client
+            window.location.href = mailtoLink;
         });
     }
 });
