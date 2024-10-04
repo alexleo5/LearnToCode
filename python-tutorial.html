@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Tutorial</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/dark-theme.css">
+</head>
+<body>
+    <header>
+        <h1>Python Tutorial</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Introduction to Python</h2>
+            <p>Python is a high-level, interpreted programming language known for its simplicity and readability. It is widely used in web development, data analysis, AI, and more.</p>
+            <h3>Basic Python Syntax</h3>
+            <pre>
+                <code>
+                    # Single-line comment
+                    """
+                    Multi-line comment
+                    """
+
+                    variable_name = "value"
+                    constant_name = "constant value"
+
+                    def function_name(parameters):
+                        # Function body
+                        pass
+                </code>
+            </pre>
+            <h3>Common Python Concepts</h3>
+            <ul>
+                <li><code>Variables</code>: Used to store data values.</li>
+                <li><code>Functions</code>: Reusable blocks of code.</li>
+                <li><code>Conditionals</code>: <code>if</code>, <code>elif</code>, <code>else</code>.</li>
+                <li><code>Loops</code>: <code>for</code>, <code>while</code>.</li>
+            </ul>
+            <h3>Example: Creating a Simple Python Program</h3>
+            <pre>
+                <code>
+                    greeting = "Hello, World!"
+                    print(greeting)
+
+                    def add(a, b):
+                        return a + b
+
+                    print(add(5, 3)) # Outputs: 8
+                </code>
+            </pre>
+            <h3>Example: Working with Lists and Loops</h3>
+            <pre>
+                <code>
+                    fruits = ["apple", "banana", "cherry"]
+
+                    for fruit in fruits:
+                        print(fruit)
+
+                    # Outputs:
+                    # apple
+                    # banana
+                    # cherry
+                </code>
+            </pre>
+            <h3>Python Libraries</h3>
+            <p>Python has a rich ecosystem of libraries that can be used for various purposes. For example, the <code>requests</code> library can be used for making HTTP requests.</p>
+            <pre>
+                <code>
+                    import requests
+
+                    response = requests.get('https://api.example.com/data')
+                    print(response.json())
+                </code>
+            </pre>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024-2025 VirusCodeCamp</p>
+    </footer>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

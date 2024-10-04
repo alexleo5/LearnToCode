@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tutorial</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/dark-theme.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Tutorial</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Introduction to JavaScript</h2>
+            <p>JavaScript is a programming language that enables interactive web pages. It is an essential part of web development.</p>
+            <h3>Basic JavaScript Syntax</h3>
+            <pre>
+                <code>
+                    // Single-line comment
+                    /* Multi-line comment */
+
+                    let variableName = "value";
+                    const constantName = "constant value";
+
+                    function functionName(parameters) {
+                        // Function body
+                    }
+                </code>
+            </pre>
+            <h3>Common JavaScript Concepts</h3>
+            <ul>
+                <li><code>Variables</code>: Used to store data values.</li>
+                <li><code>Functions</code>: Reusable blocks of code.</li>
+                <li><code>Conditionals</code>: <code>if</code>, <code>else if</code>, <code>else</code>.</li>
+                <li><code>Loops</code>: <code>for</code>, <code>while</code>.</li>
+            </ul>
+            <h3>Example: Creating a Simple JavaScript Function</h3>
+            <pre>
+                <code>
+                    let greeting = "Hello, World!";
+                    console.log(greeting);
+
+                    function add(a, b) {
+                        return a + b;
+                    }
+
+                    console.log(add(5, 3)); // Outputs: 8
+                </code>
+            </pre>
+            <h3>Example: Manipulating the DOM</h3>
+            <pre>
+                <code>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const heading = document.querySelector('h1');
+                        heading.style.color = 'blue';
+
+                        const paragraph = document.querySelector('p');
+                        paragraph.textContent = 'This text has been dynamically changed by JavaScript!';
+                    });
+                </code>
+            </pre>
+            <h3>JavaScript Events</h3>
+            <p>JavaScript events are actions that occur as a result of the user or the browser manipulating a page.</p>
+            <pre>
+                <code>
+                    document.getElementById('myButton').addEventListener('click', function() {
+                        alert('Button clicked!');
+                    });
+                </code>
+            </pre>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024-2025 VirusCodeCamp</p>
+    </footer>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

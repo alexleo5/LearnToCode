@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Tutorial</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/dark-theme.css">
+</head>
+<body>
+    <header>
+        <h1>Java Tutorial</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Introduction to Java</h2>
+            <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is widely used for developing desktop, web, and mobile applications.</p>
+            <h3>Basic Java Syntax</h3>
+            <pre>
+                <code>
+                    // Single-line comment
+                    /*
+                    Multi-line comment
+                    */
+
+                    public class Main {
+                        public static void main(String[] args) {
+                            String variableName = "value";
+                            final String CONSTANT_NAME = "constant value";
+
+                            System.out.println(variableName);
+                        }
+                    }
+                </code>
+            </pre>
+            <h3>Common Java Concepts</h3>
+            <ul>
+                <li><code>Variables</code>: Used to store data values.</li>
+                <li><code>Methods</code>: Reusable blocks of code.</li>
+                <li><code>Conditionals</code>: <code>if</code>, <code>else if</code>, <code>else</code>.</li>
+                <li><code>Loops</code>: <code>for</code>, <code>while</code>.</li>
+            </ul>
+            <h3>Example: Creating a Simple Java Program</h3>
+            <pre>
+                <code>
+                    public class Main {
+                        public static void main(String[] args) {
+                            String greeting = "Hello, World!";
+                            System.out.println(greeting);
+
+                            int result = add(5, 3);
+                            System.out.println(result); // Outputs: 8
+                        }
+
+                        public static int add(int a, int b) {
+                            return a + b;
+                        }
+                    }
+                </code>
+            </pre>
+            <h3>Example: Working with Arrays and Loops</h3>
+            <pre>
+                <code>
+                    public class Main {
+                        public static void main(String[] args) {
+                            String[] fruits = {"apple", "banana", "cherry"};
+
+                            for (String fruit : fruits) {
+                                System.out.println(fruit);
+                            }
+
+                            // Outputs:
+                            // apple
+                            // banana
+                            // cherry
+                        }
+                    }
+                </code>
+            </pre>
+            <h3>Java Collections Framework</h3>
+            <p>The Java Collections Framework provides a set of interfaces and classes to implement commonly reusable collection data structures.</p>
+            <pre>
+                <code>
+                    import java.util.ArrayList;
+
+                    public class Main {
+                        public static void main(String[] args) {
+                            ArrayList&lt;String&gt; fruits = new ArrayList&lt;&gt;();
+                            fruits.add("apple");
+                            fruits.add("banana");
+                            fruits.add("cherry");
+
+                            for (String fruit : fruits) {
+                                System.out.println(fruit);
+                            }
+                        }
+                    }
+                </code>
+            </pre>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024-2025 VirusCodeCamp</p>
+    </footer>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

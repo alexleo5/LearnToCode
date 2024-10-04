@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/dark-theme.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Quiz</h2>
+            <form id="quiz-form">
+                <div class="question">
+                    <p>1. What does HTML stand for?</p>
+                    <label><input type="radio" name="q1" value="correct"> HyperText Markup Language</label><br>
+                    <label><input type="radio" name="q1" value="wrong"> HyperText Machine Language</label><br>
+                    <label><input type="radio" name="q1" value="wrong"> HyperText Marking Language</label><br>
+                </div>
+                <div class="question">
+                    <p>2. Which of the following is a valid CSS property?</p>
+                    <label><input type="radio" name="q2" value="wrong"> text-align</label><br>
+                    <label><input type="radio" name="q2" value="correct"> color</label><br>
+                    <label><input type="radio" name="q2" value="wrong"> font-style</label><br>
+                </div>
+                <div class="question">
+                    <p>3. What is the correct JavaScript syntax to change the content of a paragraph element?</p>
+                    <label><input type="radio" name="q3" value="wrong"> document.getElement("p").innerHTML = "Hello";</label><br>
+                    <label><input type="radio" name="q3" value="correct"> document.getElementById("p").innerHTML = "Hello";</label><br>
+                    <label><input type="radio" name="q3" value="wrong"> document.getElementByName("p").innerHTML = "Hello";</label><br>
+                </div>
+                <div class="question">
+                    <p>4. What is the correct HTML for creating a hyperlink?</p>
+                    <label><input type="radio" name="q4" value="correct"> &lt;a href="http://www.example.com"&gt;Example&lt;/a&gt;</label><br>
+                    <label><input type="radio" name="q4" value="wrong"> &lt;a url="http://www.example.com"&gt;Example&lt;/a&gt;</label><br>
+                    <label><input type="radio" name="q4" value="wrong"> &lt;a name="http://www.example.com"&gt;Example&lt;/a&gt;</label><br>
+                </div>
+                <div class="question">
+                    <p>5. Which CSS property is used to change the text color of an element?</p>
+                    <label><input type="radio" name="q5" value="correct"> color</label><br>
+                    <label><input type="radio" name="q5" value="wrong"> text-color</label><br>
+                    <label><input type="radio" name="q5" value="wrong"> font-color</label><br>
+                </div>
+                <div class="question">
+                    <p>6. What is the correct way to write a JavaScript array?</p>
+                    <label><input type="radio" name="q6" value="correct"> var colors = ["red", "green", "blue"];</label><br>
+                    <label><input type="radio" name="q6" value="wrong"> var colors = "red", "green", "blue";</label><br>
+                    <label><input type="radio" name="q6" value="wrong"> var colors = (1:"red", 2:"green", 3:"blue");</label><br>
+                </div>
+                <div class="question">
+                    <p>7. What is the correct Python syntax for a for loop?</p>
+                    <label><input type="radio" name="q7" value="correct"> for i in range(5):</label><br>
+                    <label><input type="radio" name="q7" value="wrong"> for (i = 0; i < 5; i++):</label><br>
+                    <label><input type="radio" name="q7" value="wrong"> for i in 5:</label><br>
+                </div>
+                <div class="question">
+                    <p>8. Which of the following is a valid Ruby method definition?</p>
+                    <label><input type="radio" name="q8" value="correct"> def my_method</label><br>
+                    <label><input type="radio" name="q8" value="wrong"> function my_method</label><br>
+                    <label><input type="radio" name="q8" value="wrong"> method my_method</label><br>
+                </div>
+                <div class="question">
+                    <p>9. What is the correct Java syntax for a for loop?</p>
+                    <label><input type="radio" name="q9" value="correct"> for (int i = 0; i < 5; i++)</label><br>
+                    <label><input type="radio" name="q9" value="wrong"> for i in range(5)</label><br>
+                    <label><input type="radio" name="q9" value="wrong"> for (i = 0; i < 5; i++)</label><br>
+                </div>
+                <div class="question">
+                    <p>10. Which of the following is a valid C++ for loop?</p>
+                    <label><input type="radio" name="q10" value="correct"> for (int i = 0; i < 5; i++)</label><br>
+                    <label><input type="radio" name="q10" value="wrong"> for i in range(5)</label><br>
+                    <label><input type="radio" name="q10" value="wrong"> for (i = 0; i < 5; i++)</label><br>
+                </div>
+                <div class="question">
+                    <p>11. What is the correct PHP syntax for a for loop?</p>
+                    <label><input type="radio" name="q11" value="correct"> for ($i = 0; $i < 5; $i++)</label><br>
+                    <label><input type="radio" name="q11" value="wrong"> for i in range(5)</label><br>
+                    <label><input type="radio" name="q11" value="wrong"> for (i = 0; i < 5; i++)</label><br>
+                </div>
+                <div class="question">
+                    <p>12. What is the correct Go syntax for a for loop?</p>
+                    <label><input type="radio" name="q12" value="correct"> for i := 0; i < 5; i++</label><br>
+                    <label><input type="radio" name="q12" value="wrong"> for i in range(5)</label><br>
+                    <label><input type="radio" name="q12" value="wrong"> for (i = 0; i < 5; i++)</label><br>
+                </div>
+                <div class="question">
+                    <p>13. What is the correct HTML for creating a form?</p>
+                    <label><input type="radio" name="q13" value="correct"> &lt;form action="submit.php" method="post"&gt;</label><br>
+                    <label><input type="radio" name="q13" value="wrong"> &lt;form url="submit.php" method="post"&gt;</label><br>
+                    <label><input type="radio" name="q13" value="wrong"> &lt;form name="submit.php" method="post"&gt;</label><br>
+                </div>
+                <div class="question">
+                    <p>14. Which CSS property is used to change the background color of an element?</p>
+                    <label><input type="radio" name="q14" value="correct"> background-color</label><br>
+                    <label><input type="radio" name="q14" value="wrong"> bg-color</label><br>
+                    <label><input type="radio" name="q14" value="wrong"> background</label><br>
+                </div>
+                <div class="question">
+                    <p>15. What is the correct JavaScript syntax for a function declaration?</p>
+                    <label><input type="radio" name="q15" value="correct"> function myFunction() {}</label><br>
+                    <label><input type="radio" name="q15" value="wrong"> func myFunction() {}</label><br>
+                    <label><input type="radio" name="q15" value="wrong"> def myFunction() {}</label><br>
+                </div>
+                <div class="question">
+                    <p>16. What is the correct Python syntax for a function declaration?</p>
+                    <label><input type="radio" name="q16" value="correct"> def my_function():</label><br>
+                    <label><input type="radio" name="q16" value="wrong"> function my_function():</label><br>
+                    <label><input type="radio" name="q16" value="wrong"> def my_function:</label><br>
+                </div>
+                <div class="question">
+                    <p>17. Which of the following is a valid Ruby class definition?</p>
+                    <label><input type="radio" name="q17" value="correct"> class MyClass</label><br>
+                    <label><input type="radio" name="q17" value="wrong"> class MyClass():</label><br>
+                    <label><input type="radio" name="q17" value="wrong"> class MyClass {}</label><br>
+                </div>
+                <div class="question">
+                    <p>18. What is the correct Java syntax for a class declaration?</p>
+                    <label><input type="radio" name="q18" value="correct"> public class MyClass {}</label><br>
+                    <label><input type="radio" name="q18" value="wrong"> class MyClass() {}</label><br>
+                    <label><input type="radio" name="q18" value="wrong"> public class MyClass() {}</label><br>
+                </div>
+                <div class="question">
+                    <p>19. Which of the following is a valid C++ class declaration?</p>
+                    <label><input type="radio" name="q19" value="correct"> class MyClass {}</label><br>
+                    <label><input type="radio" name="q19" value="wrong"> class MyClass() {}</label><br>
+                    <label><input type="radio" name="q19" value="wrong"> public class MyClass {}</label><br>
+                </div>
+                <div class="question">
+                    <p>20. What is the correct PHP syntax for a class declaration?</p>
+                    <label><input type="radio" name="q20" value="correct"> class MyClass {}</label><br>
+                    <label><input type="radio" name="q20" value="wrong"> class MyClass() {}</label><br>
+                    <label><input type="radio" name="q20" value="wrong"> public class MyClass {}</label><br>
+                </div>
+                <div class="question">
+                    <p>21. What is the correct Go syntax for a struct declaration?</p>
+                    <label><input type="radio" name="q21" value="correct"> type MyStruct struct {}</label><br>
+                    <label><input type="radio" name="q21" value="wrong"> struct MyStruct {}</label><br>
+                    <label><input type="radio" name="q21" value="wrong"> type MyStruct() {}</label><br>
+                </div>
+                <div class="question">
+                    <p>22. Which CSS property is used to change the font size of an element?</p>
+                    <label><input type="radio" name="q22" value="correct"> font-size</label><br>
+                    <label><input type="radio" name="q22" value="wrong"> text-size</label><br>
+                    <label><input type="radio" name="q22" value="wrong"> size</label><br>
+                </div>
+                <div class="question">
+                    <p>23. What is the correct JavaScript syntax for a conditional statement?</p>
+                    <label><input type="radio" name="q23" value="correct"> if (condition) {}</label><br>
+                    <label><input type="radio" name="q23" value="wrong"> if condition {}</label><br>
+                    <label><input type="radio" name="q23" value="wrong"> if condition:</label><br>
+                </div>
+                <div class="question">
+                    <p>24. What is the correct Python syntax for a conditional statement?</p>
+                    <label><input type="radio" name="q24" value="correct"> if condition:</label><br>
+                    <label><input type="radio" name="q24" value="wrong"> if (condition) {}</label><br>
+                    <label><input type="radio" name="q24" value="wrong"> if condition {}</label><br>
+                </div>
+                <div class="question">
+                    <p>25. Which of the following is a valid Ruby conditional statement?</p>
+                    <label><input type="radio" name="q25" value="correct"> if condition</label><br>
+                    <label><input type="radio" name="q25" value="wrong"> if (condition) {}</label><br>
+                    <label><input type="radio" name="q25" value="wrong"> if condition:</label><br>
+                </div>
+                <div class="question">
+                    <p>26. What is the correct way to write a JavaScript array?</p>
+                    <label><input type="radio" name="q26" value="correct"> var colors = ["red", "green", "blue"];</label><br>
+                    <label><input type="radio" name="q26" value="wrong"> var colors = "red", "green", "blue";</label><br>
+                    <label><input type="radio" name="q26" value="wrong"> var colors = (1:"red", 2:"green", 3:"blue");</label><br>
+                </div>
+                <button type="submit">Submit Quiz</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024-2025 VirusCodeCamp</p>
+    </footer>
+    <script src="../js/scripts.js"></script>
+    <script src="../js/quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tutorial</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/dark-theme.css">
+</head>
+<body>
+    <header>
+        <h1>HTML Tutorial</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Introduction to HTML</h2>
+            <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages. It uses a series of elements to structure content on the web.</p>
+            <h3>Basic Structure of an HTML Document</h3>
+            <pre>
+                <code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="en"&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;title&gt;Document&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;h1&gt;Hello, World!&lt;/h1&gt;
+                        &lt;p&gt;This is a paragraph.&lt;/p&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code>
+            </pre>
+            <h3>Common HTML Elements</h3>
+            <ul>
+                <li><code>&lt;h1&gt; to &lt;h6&gt;</code>: Headings</li>
+                <li><code>&lt;p&gt;</code>: Paragraph</li>
+                <li><code>&lt;a&gt;</code>: Anchor (for links)</li>
+                <li><code>&lt;img&gt;</code>: Image</li>
+                <li><code>&lt;ul&gt; and &lt;li&gt;</code>: Unordered list and list items</li>
+            </ul>
+            <h3>Example: Creating a Simple Web Page</h3>
+            <pre>
+                <code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="en"&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;title&gt;My First Web Page&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;h1&gt;Welcome to My Web Page&lt;/h1&gt;
+                        &lt;p&gt;This is a simple web page created using HTML.&lt;/p&gt;
+                        &lt;img src="image.jpg" alt="Description of the image"&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;Item 1&lt;/li&gt;
+                            &lt;li&gt;Item 2&lt;/li&gt;
+                            &lt;li&gt;Item 3&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code>
+            </pre>
+            <h3>HTML Forms</h3>
+            <p>HTML forms are used to collect user input. Here's an example:</p>
+            <pre>
+                <code>
+                    &lt;form action="/submit" method="post"&gt;
+                        &lt;label for="name"&gt;Name:&lt;/label&gt;
+                        &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;
+                        &lt;label for="email"&gt;Email:&lt;/label&gt;
+                        &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;
+                        &lt;input type="submit" value="Submit"&gt;
+                    &lt;/form&gt;
+                </code>
+            </pre>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024-2025 VirusCodeCamp</p>
+    </footer>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

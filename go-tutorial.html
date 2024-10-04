@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Tutorial</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/dark-theme.css">
+</head>
+<body>
+    <header>
+        <h1>Go Tutorial</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Introduction to Go</h2>
+            <p>Go (also known as Golang) is a statically typed, compiled programming language designed at Google. It is known for its simplicity, efficiency, and strong support for concurrency.</p>
+            <h3>Basic Go Syntax</h3>
+            <pre>
+                <code>
+                    // Single-line comment
+                    /*
+                    Multi-line comment
+                    */
+
+                    package main
+
+                    import "fmt"
+
+                    func main() {
+                        variableName := "value"
+                        const CONSTANT_NAME = "constant value"
+
+                        fmt.Println(variableName)
+                    }
+                </code>
+            </pre>
+            <h3>Common Go Concepts</h3>
+            <ul>
+                <li><code>Variables</code>: Used to store data values.</li>
+                <li><code>Functions</code>: Reusable blocks of code.</li>
+                <li><code>Conditionals</code>: <code>if</code>, <code>else if</code>, <code>else</code>.</li>
+                <li><code>Loops</code>: <code>for</code>.</li>
+            </ul>
+            <h3>Example: Creating a Simple Go Program</h3>
+            <pre>
+                <code>
+                    package main
+
+                    import "fmt"
+
+                    func add(a, b int) int {
+                        return a + b
+                    }
+
+                    func main() {
+                        greeting := "Hello, World!"
+                        fmt.Println(greeting)
+
+                        result := add(5, 3)
+                        fmt.Println(result) // Outputs: 8
+                    }
+                </code>
+            </pre>
+            <h3>Example: Working with Arrays and Loops</h3>
+            <pre>
+                <code>
+                    package main
+
+                    import "fmt"
+
+                    func main() {
+                        fruits := []string{"apple", "banana", "cherry"}
+
+                        for _, fruit := range fruits {
+                            fmt.Println(fruit)
+                        }
+
+                        // Outputs:
+                        // apple
+                        // banana
+                        // cherry
+                    }
+                </code>
+            </pre>
+            <h3>Go Concurrency</h3>
+            <p>Go has built-in support for concurrency using goroutines and channels.</p>
+            <pre>
+                <code>
+                    package main
+
+                    import (
+                        "fmt"
+                        "time"
+                    )
+
+                    func printNumbers() {
+                        for i := 1; i <= 5; i++ {
+                            fmt.Println(i)
+                            time.Sleep(time.Millisecond * 500)
+                        }
+                    }
+
+                    func printLetters() {
+                        for i := 'a'; i <= 'e'; i++ {
+                            fmt.Printf("%c\n", i)
+                            time.Sleep(time.Millisecond * 500)
+                        }
+                    }
+
+                    func main() {
+                        go printNumbers()
+                        go printLetters()
+
+                        time.Sleep(time.Second * 3)
+                    }
+                </code>
+            </pre>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024-2025 VirusCodeCamp</p>
+    </footer>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

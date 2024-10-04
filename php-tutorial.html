@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Tutorial</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/dark-theme.css">
+</head>
+<body>
+    <header>
+        <h1>PHP Tutorial</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Introduction to PHP</h2>
+            <p>PHP (Hypertext Preprocessor) is a server-side scripting language designed for web development but also used as a general-purpose programming language. It is widely used for creating dynamic web pages and web applications.</p>
+            <h3>Basic PHP Syntax</h3>
+            <pre>
+                <code>
+                    &lt;?php
+                    // Single-line comment
+                    /*
+                    Multi-line comment
+                    */
+
+                    $variableName = "value";
+                    define("CONSTANT_NAME", "constant value");
+
+                    echo $variableName;
+                    ?&gt;
+                </code>
+            </pre>
+            <h3>Common PHP Concepts</h3>
+            <ul>
+                <li><code>Variables</code>: Used to store data values.</li>
+                <li><code>Functions</code>: Reusable blocks of code.</li>
+                <li><code>Conditionals</code>: <code>if</code>, <code>else if</code>, <code>else</code>.</li>
+                <li><code>Loops</code>: <code>for</code>, <code>while</code>.</li>
+            </ul>
+            <h3>Example: Creating a Simple PHP Script</h3>
+            <pre>
+                <code>
+                    &lt;?php
+                    $greeting = "Hello, World!";
+                    echo $greeting;
+
+                    function add($a, $b) {
+                        return $a + $b;
+                    }
+
+                    echo add(5, 3); // Outputs: 8
+                    ?&gt;
+                </code>
+            </pre>
+            <h3>Example: Working with Arrays and Loops</h3>
+            <pre>
+                <code>
+                    &lt;?php
+                    $fruits = ["apple", "banana", "cherry"];
+
+                    foreach ($fruits as $fruit) {
+                        echo $fruit . "\n";
+                    }
+
+                    // Outputs:
+                    // apple
+                    // banana
+                    // cherry
+                    ?&gt;
+                </code>
+            </pre>
+            <h3>PHP Forms</h3>
+            <p>PHP forms are used to collect user input. Here's an example:</p>
+            <pre>
+                <code>
+                    &lt;form action="submit.php" method="post"&gt;
+                        &lt;label for="name"&gt;Name:&lt;/label&gt;
+                        &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;
+                        &lt;label for="email"&gt;Email:&lt;/label&gt;
+                        &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;
+                        &lt;input type="submit" value="Submit"&gt;
+                    &lt;/form&gt;
+                </code>
+            </pre>
+            <h3>Handling Form Data</h3>
+            <p>To handle form data, you can use the <code>$_POST</code> superglobal in PHP.</p>
+            <pre>
+                <code>
+                    &lt;?php
+                    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                        $name = $_POST['name'];
+                        $email = $_POST['email'];
+                        echo "Name: " . $name . "&lt;br&gt;";
+                        echo "Email: " . $email . "&lt;br&gt;";
+                    }
+                    ?&gt;
+                </code>
+            </pre>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024-2025 VirusCodeCamp</p>
+    </footer>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruby Tutorial</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/dark-theme.css">
+</head>
+<body>
+    <header>
+        <h1>Ruby Tutorial</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Introduction to Ruby</h2>
+            <p>Ruby is a dynamic, open-source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.</p>
+            <h3>Basic Ruby Syntax</h3>
+            <pre>
+                <code>
+                    # Single-line comment
+                    =begin
+                    Multi-line comment
+                    =end
+
+                    variable_name = "value"
+                    CONSTANT_NAME = "constant value"
+
+                    def function_name(parameters)
+                        # Function body
+                    end
+                </code>
+            </pre>
+            <h3>Common Ruby Concepts</h3>
+            <ul>
+                <li><code>Variables</code>: Used to store data values.</li>
+                <li><code>Methods</code>: Reusable blocks of code.</li>
+                <li><code>Conditionals</code>: <code>if</code>, <code>elsif</code>, <code>else</code>.</li>
+                <li><code>Loops</code>: <code>for</code>, <code>while</code>.</li>
+            </ul>
+            <h3>Example: Creating a Simple Ruby Program</h3>
+            <pre>
+                <code>
+                    greeting = "Hello, World!"
+                    puts greeting
+
+                    def add(a, b)
+                        return a + b
+                    end
+
+                    puts add(5, 3) # Outputs: 8
+                </code>
+            </pre>
+            <h3>Example: Working with Arrays and Loops</h3>
+            <pre>
+                <code>
+                    fruits = ["apple", "banana", "cherry"]
+
+                    fruits.each do |fruit|
+                        puts fruit
+                    end
+
+                    # Outputs:
+                    # apple
+                    # banana
+                    # cherry
+                </code>
+            </pre>
+            <h3>Ruby Gems</h3>
+            <p>Ruby gems are libraries that can be used to extend the functionality of Ruby. For example, the <code>sinatra</code> gem can be used to create web applications.</p>
+            <pre>
+                <code>
+                    require 'sinatra'
+
+                    get '/' do
+                        "Hello, World!"
+                    end
+                </code>
+            </pre>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024-2025 VirusCodeCamp</p>
+    </footer>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
